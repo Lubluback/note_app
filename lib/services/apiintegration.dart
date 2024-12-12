@@ -1,13 +1,9 @@
 import 'dart:convert';
-import 'dart:ffi';
-
 import 'package:flutter/material.dart';
-import 'package:notes_writing_app/model/note_app_model/note_app_model.dart';
-
+import 'package:notes_writing_app/model/note_app_model.dart';
 import 'package:http/http.dart' as http;
-import 'package:notes_writing_app/provider/api_provider/api_provider.dart';
 import 'package:notes_writing_app/services/urls.dart';
-import 'package:provider/provider.dart';
+
 
 abstract class Apicalls {
   Future<List<NoteAppModel>> getNote();

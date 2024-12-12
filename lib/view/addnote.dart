@@ -1,9 +1,7 @@
 // ignore_for_file: constant_identifier_names
 
 import 'package:flutter/material.dart';
-import 'package:notes_writing_app/model/note_app_model/note_app_model.dart';
-import 'package:notes_writing_app/provider/api_provider/api_provider.dart';
-import 'package:notes_writing_app/services/apiintegration.dart';
+import 'package:notes_writing_app/provider/appedit_provider/addedit_provider.dart';
 import 'package:provider/provider.dart';
 
 enum ActionType {
@@ -15,7 +13,7 @@ class AddNote extends StatelessWidget {
   final ActionType type;
   final String? id;
 
-  AddNote({super.key, required this.type, this.id});
+  const AddNote({super.key, required this.type, this.id});
 
   Widget get savebutton =>
       Consumer<AddEditProvider>(builder: (ctx, value, child) {

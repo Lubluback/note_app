@@ -1,6 +1,4 @@
 import 'package:json_annotation/json_annotation.dart';
-import 'package:provider/provider.dart';
-
 part 'note_app_model.g.dart';
 
 @JsonSerializable()

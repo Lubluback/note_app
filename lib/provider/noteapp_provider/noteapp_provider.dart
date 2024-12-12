@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:notes_writing_app/model/note_app_model/note_app_model.dart';
+import 'package:notes_writing_app/model/note_app_model.dart';
 import 'package:notes_writing_app/services/apiintegration.dart';
 
 class NoteAppProvider extends ChangeNotifier {

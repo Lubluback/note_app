@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 //import 'package:notes_writing_app/model/note_app_model/note_app_model.dart';
-import 'package:notes_writing_app/provider/api_provider/api_provider.dart';
+import 'package:notes_writing_app/provider/appedit_provider/addedit_provider.dart';
 //import 'package:notes_writing_app/provider/noteapp_provider/noteapp_provider.dart';
 //import 'package:notes_writing_app/services/apiintegration.dart';
 import 'package:notes_writing_app/view/addnote.dart';
-import 'package:notes_writing_app/widgets/noteappmodel.dart';
+import 'package:notes_writing_app/widgets/Customcontainer.dart';
 import 'package:provider/provider.dart';
 
 class NoteApp extends StatefulWidget {

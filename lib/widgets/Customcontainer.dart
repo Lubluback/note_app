@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:notes_writing_app/model/note_app_model/note_app_model.dart';
-import 'package:notes_writing_app/provider/api_provider/api_provider.dart';
-import 'package:notes_writing_app/services/apiintegration.dart';
+import 'package:notes_writing_app/provider/appedit_provider/addedit_provider.dart';
 import 'package:notes_writing_app/view/addnote.dart';
 import 'package:provider/provider.dart';
 
@@ -19,8 +17,8 @@ class ContainerSets extends StatelessWidget {
   Widget build(BuildContext context) {
     final provider = Provider.of<AddEditProvider>(context, listen: false);
     return Container(
-        margin: EdgeInsets.all(8),
-        padding: EdgeInsets.only(top: 3, left: 5, right: 3),
+        margin: const EdgeInsets.all(8),
+        padding: const EdgeInsets.only(top: 3, left: 5, right: 3),
         decoration: BoxDecoration(
             border: Border.all(color: Colors.black, width: 1.4),
             borderRadius: BorderRadius.circular(10)),
@@ -33,7 +31,7 @@ class ContainerSets extends StatelessWidget {
                 Expanded(
                   child: Text(
                     title,
-                    style: TextStyle(
+                    style: const TextStyle(
                         color: Colors.black, fontWeight: FontWeight.w600),
                   ),
                 ),
@@ -62,7 +60,7 @@ class ContainerSets extends StatelessWidget {
                           //  )
                           ;
                     },
-                    child: Text("Edit"))
+                    child: const Text("Edit"))
                 // TextButton(
                 //     onPressed: () {
 
@@ -76,7 +74,7 @@ class ContainerSets extends StatelessWidget {
               // textAlign: TextAlign.start,
               maxLines: 5,
               overflow: TextOverflow.ellipsis,
-              style: TextStyle(color: Colors.black),
+              style: const TextStyle(color: Colors.black),
             )
           ],
         ));

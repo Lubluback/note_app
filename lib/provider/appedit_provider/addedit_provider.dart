@@ -1,7 +1,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 //import 'package:http/http.dart';
-import 'package:notes_writing_app/model/note_app_model/note_app_model.dart';
+import 'package:notes_writing_app/model/note_app_model.dart';
 import 'package:notes_writing_app/services/apiintegration.dart';
 
 class AddEditProvider extends ChangeNotifier {
